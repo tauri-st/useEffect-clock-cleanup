@@ -6,8 +6,8 @@ function App() {
   const [showClock, setShowClock] = useState(true);
 
   const toggleClock = (e) => {
-    showClock === true ? setShowClock(false) : setShowClock(false);
-  }
+    setShowClock(!showClock)
+  };
 
   return (
     <div className="App">
