@@ -11,8 +11,8 @@ function App() {
 
   return (
     <div className="App">
-      <Clock />
-      <button className="clock-toggle" onClick={toggleClock}>Show clock</button>
+      {showClock && <Clock />}
+      <button className="clock-toggle" onClick={toggleClock}>{showClock ? "Show clock" : "Hide clock"}</button>
     </div>
   );
 }
