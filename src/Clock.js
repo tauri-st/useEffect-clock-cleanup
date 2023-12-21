@@ -3,6 +3,10 @@ import React, { useState } from "react";
 function Clock() {
   const [time, setTime] = useState(new Date());
 
+  useEffect(() => {
+
+  }, []);
+
   return (
     <p className="clock">
       {time.toLocaleString("en-US", {
